@@ -1,0 +1,17 @@
+<head>
+  <title>meteor-select-issue-reproduce</title>
+</head>
+
+<body>
+  {{> select}}
+</body>
+
+<template name="select">
+  <select>
+    {{#each options}}
+      <option value="{{value}}" selected="{{selected}}" disabled="{{disabled}}">
+        {{name}}
+      </option>
+    {{/each}}
+  </select>
+</template>
